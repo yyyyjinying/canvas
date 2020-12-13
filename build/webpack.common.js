@@ -129,9 +129,16 @@ let config = {
         test: /\.css$/,
         use: [
           cssLoader(),
+          'css-modules-typescript-loader',
           {
-            loader: 'css-loader', // @import 语法
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
           },
+          // {
+          //   loader: 'css-loader', // @import 语法
+          // },
           {
             loader: 'postcss-loader', // 补充前缀浏览器兼容问题
             options: {

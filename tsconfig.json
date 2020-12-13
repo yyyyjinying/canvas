@@ -6,6 +6,19 @@
       "@/*": ["src/*"],
       "@common/*": ["src/common/*"]
     },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes",
+          "customMatcher": "\\.m\\.css$",
+          "customRenderer": "./myRenderer.js",
+          "dotenvOptions": {},
+          "postCssOptions": {},
+          "rendererOptions": {}
+        }
+      }
+    ],
     "module": "esnext",
     "target": "es6",
     "lib": ["es6", "dom"],

@@ -16,6 +16,9 @@
 ## 配置css和less的module的rules规则
 - less 可以引入 css
 - css 不可以引入 less
+- {
+            loader: 'css-loader?modules&localIdentName=[name]-[hash:base64:5]',
+          },
 ```json
     {
         test: /\.less$/,
