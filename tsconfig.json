@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "jsx": "react",
+    "allowJs": true, // 模块导入js文件
+    "resolveJsonModule": true, // 模块导入json
+    "moduleResolution": "node", // 模块解析查找路径的规则
+    "experimentalDecorators": true, // 允许使用装饰器
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest", "*.js"]
+}
