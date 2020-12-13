@@ -3,8 +3,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { render } from 'react-dom';
-import Home from './page/coreDecorators';
-import TSTest from './page/ts-test/topics';
 import './public/rem';
 import './style.less';
 // import "./tapable";
@@ -36,8 +34,6 @@ class App extends React.Component {
     return (
       <div>
         iphone
-        <TSTest />
-        <Home />
         {/* {sub} */}
         <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} />
       </div>

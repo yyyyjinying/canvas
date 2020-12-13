@@ -22,5 +22,5 @@
     "noUnusedLocals": true
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest", "*.js"]
+  "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest"]
 }
