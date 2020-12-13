@@ -1,22 +1,23 @@
-const path = require("path");
-const webpack = require("webpack");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
   entry: {
-    vendor: ["react", "react-dom"],
+    vendor: ['react', 'react-dom'],
   },
   output: {
-    filename: "_dll_[name].js",
-    path: path.resolve(__dirname, "../dist/manifest"),
-    library: "_dll_[name]",
+    filename: '_dll_[name].js',
+    path: path.resolve(__dirname, '../dist/manifest'),
+    library: '_dll_[name]',
   },
   plugins: [
     new webpack.DllPlugin({
-      name: "_dll_[name]",
-      path: path.resolve(__dirname, "../dist/manifest", "manifest.json"),
+      name: '_dll_[name]',
+      path: path.resolve(__dirname, '../dist/manifest', 'manifest.json'),
     }),
-    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ["manifest"] }),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['manifest'] }),
   ],
 };
