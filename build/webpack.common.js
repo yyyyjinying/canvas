@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -35,7 +36,10 @@ let config = {
   entry: {},
   output: {},
   resolve: {
-    alias: {},
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+      '@common': path.resolve(__dirname, '../src/common'),
+    },
     // mainFields: ["main","style"],
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.less', '.css'], // 简化文件路径的引用
     modules: ['node_modules'],
@@ -52,7 +56,7 @@ let config = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, '../src/public'),
+          from: path.resolve(__dirname, '../public'),
           to: path.resolve(__dirname, '../dist/public'),
         },
       ],

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@common/*": ["src/common/*"]
+    },
     "module": "esnext",
     "target": "es6",
     "lib": ["es6", "dom"],
@@ -18,9 +22,9 @@
     "noImplicitAny": true,
     "importHelpers": true,
     "strictNullChecks": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true, // 允许引入没有默认导出的模块
     "noUnusedLocals": true
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest"]
+  "exclude": ["**/*.js", "node_modules", "public", "build", "dist", "scripts", "webpack", "jest"]
 }
