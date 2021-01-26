@@ -16,6 +16,7 @@
     "moduleResolution": "node", // 模块解析查找路径的规则
     "experimentalDecorators": true, // 允许使用装饰器
     "rootDir": ".",
+    "outDir": "./dist",
     "forceConsistentCasingInFileNames": false,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -26,5 +27,5 @@
     "noUnusedLocals": true
   },
   "include": ["./src/**/*"],
-  "exclude": ["**/*.js", "node_modules", "public", "build", "dist", "scripts", "webpack", "jest"]
+  "exclude": ["node_modules", "public", "build", "dist", "scripts", "webpack", "jest"]
 }

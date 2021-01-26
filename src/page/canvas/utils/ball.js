@@ -31,6 +31,11 @@ class Ball {
     ctx.restore();
     return this;
   }
+
+  isPoint(pos) {
+    let { x, y } = pos;
+    return this.r >= Math.sqrt((x - this.x) ** 2 + (y - this.y) ** 2);
+  }
 }
 
 export default Ball;

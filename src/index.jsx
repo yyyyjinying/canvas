@@ -4,7 +4,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import '../public/rem';
-import Comm from '@common/components';
+// import Comm from '@common/components';
 import Canvas from './page/canvas';
 import './style.less';
 // import "./tapable";
@@ -35,11 +35,11 @@ class App extends React.Component {
 
     return (
       <div>
-        iphone
-        <Comm />
+        {/* iphone */}
+        {/* <Comm /> */}
         <Canvas />
         {/* {sub} */}
-        <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} />
+        {/* <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} /> */}
       </div>
     );
   }
