@@ -6,6 +6,7 @@ import { render } from 'react-dom';
 import '../public/rem';
 // import Comm from '@common/components';
 import Canvas from './page/canvas';
+import { Button } from 'yyyyjinying-button-test';
 import './style.less';
 // import "./tapable";
 // import Car from "./car.jpg";
@@ -37,6 +38,7 @@ class App extends React.Component {
       <div>
         {/* iphone */}
         {/* <Comm /> */}
+        <Button color="blur">按钮</Button>
         <Canvas />
         {/* {sub} */}
         {/* <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} /> */}
