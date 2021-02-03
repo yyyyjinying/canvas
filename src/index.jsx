@@ -6,8 +6,9 @@ import { render } from 'react-dom';
 import '../public/rem';
 // import Comm from '@common/components';
 import Canvas from './page/canvas';
-import { Button } from 'yyyyjinying-button-test';
-import ZButton from 'z-jinying-test';
+// import { Button } from 'yyyyjinying-button-test';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const ZButton = require('z-jinying-test');
 import './style.less';
 // import "./tapable";
 // import Car from "./car.jpg";
@@ -39,8 +40,8 @@ class App extends React.Component {
       <div>
         {/* iphone */}
         {/* <Comm /> */}
-        <z-button />
-        <z-button color="blur">按钮</z-button>
+        <ZButton />
+        {/* <z-button color="blur">按钮</z-button> */}
         <Canvas />
         {/* {sub} */}
         {/* <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} /> */}
