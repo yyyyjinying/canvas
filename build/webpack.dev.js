@@ -8,16 +8,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(
   {
     entry: {
-      home: path.resolve(__dirname, '../example') + '/index.jsx',
-      // home: './example/index.jsx',
-      // home: './src/index.jsx',
+      home: path.resolve(__dirname, '../src') + '/index.jsx',
     },
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, '../dist'),
-      // library: "[name]",
-      // libraryTarget: "var", // commonjs cmd
-      // publicPath: "http://baidu.com",
     },
     mode: 'development', //"production",//"development", // 开发模式
     devServer: {
@@ -39,7 +34,7 @@ module.exports = merge(
     plugins: [
       new HtmlWebpackPlugin({
         title: 'webpack-test',
-        template: './example/index.html',
+        template: './src/index.html',
         filename: 'home.html',
         chunks: ['home'],
         // minify: {
