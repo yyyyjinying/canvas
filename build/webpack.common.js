@@ -110,7 +110,7 @@ let config = {
         ],
         enforce: 'pre', // 编译前检查
         exclude: /node_modules/, // 不检测的文件
-        include: [path.resolve(__dirname, '../src')], // 指定检查的目录
+        include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../example')], // 指定检查的目录
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|pdf|png|svg|jpg|gif|jpeg)$/,

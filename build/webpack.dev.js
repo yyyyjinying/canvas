@@ -8,8 +8,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(
   {
     entry: {
-      home: './src/index.jsx',
-      // home: "./src/index.js",
+      home: path.resolve(__dirname, '../example') + '/index.jsx',
+      // home: './example/index.jsx',
+      // home: './src/index.jsx',
     },
     output: {
       filename: '[name].js',
@@ -38,7 +39,7 @@ module.exports = merge(
     plugins: [
       new HtmlWebpackPlugin({
         title: 'webpack-test',
-        template: './src/index.html',
+        template: './example/index.html',
         filename: 'home.html',
         chunks: ['home'],
         // minify: {
