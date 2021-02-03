@@ -8,7 +8,7 @@ import '../public/rem';
 import Canvas from './page/canvas';
 // import { Button } from 'yyyyjinying-button-test';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const ZButton = require('z-jinying-test');
+import ZButton from 'z-jinying-test';
 import './style.less';
 // import "./tapable";
 // import Car from "./car.jpg";
