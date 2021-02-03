@@ -1,8 +1,5 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 import React from 'react';
 import { render } from 'react-dom';
-import App from './app';
+import App from '.';
 
 render(<App />, document.getElementById('app'));
