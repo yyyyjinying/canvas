@@ -1,11 +1,11 @@
 {
-  "name": "z-canvas-test",
+  "name": "z-jinying-test",
   "version": "1.0.0",
-  "description": "canvas测试",
+  "description": "z测试",
   "main": "./dist/webpack-zhao.js",
   "repository": "https://github.com/yyyyjinying/canvas.git",
   "keywords": [
-    "canvas",
+    "z",
     "yyyyjinying"
   ],
   "dependencies": {

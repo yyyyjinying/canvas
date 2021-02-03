@@ -20,6 +20,35 @@ module.exports = merge(
       library: 'webpackZhao',
       path: path.resolve(__dirname, '../dist'),
     },
+    externals: {
+      lodash: {
+        commonjs: 'lodash',
+        commonjs2: 'lodash',
+        amd: 'lodash',
+        root: '_',
+      },
+      jquery: {
+        commonjs: 'jquery',
+        commonjs2: 'jquery',
+        amd: 'jquery',
+        root: 'jquery',
+      },
+      react: {
+        commonjs: 'react',
+        commonjs2: 'react',
+        amd: 'react',
+      },
+      'react-dom': {
+        commonjs: 'react-dom',
+        commonjs2: 'react-dom',
+        amd: 'react-dom',
+      },
+      antd: {
+        commonjs: 'antd',
+        commonjs2: 'antd',
+        amd: 'antd',
+      },
+    },
     mode: 'production', //"production",//"development", // 开发模式
     optimization: {
       minimizer: [
