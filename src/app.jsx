@@ -1,5 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Index from './index';
+import { ZForm } from './index';
 
-render(<Index />, document.getElementById('app'));
+render(<ZForm />, document.getElementById('app'));

@@ -12,11 +12,12 @@ module.exports = {
     jest: true,
   },
   /**
+   * 'eslint:recommended',
    * 'plugin:react/recommended'使用来自 @eslint-plugin-react 的推荐规则
    * 'plugin:@typescript-eslint/recommended',  // 使用来自@typescript-eslint/eslint-plugin的推荐规则
    *  */
 
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -37,17 +38,21 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    '@typescript-eslint/no-empty-function': 1,
     '@typescript-eslint/rule-name': 0,
+    '@typescript-eslint/no-explicit-any': 1,
+    '@typescript-eslint/no-inferrable-types': 1,
+    '@typescript-eslint/no-extra-semi': 0,
     '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-inferrable-types': 0,
-    'prefer-const': 0,
+    'prefer-const': 1,
     'no-debugger': 1, // debugger提示
-    'no-unused-vars': 2, // 变量underfined
+    'no-unused-vars': 0, // 变量underfined
     'no-multi-spaces': 1, //不能用多余的空格
     //禁止使用没有定义的变量，除非在／＊global＊／已经申明
-    'no-undef': 1,
+    'no-undef': 0,
+    'space-infix-ops': 0, // " space-infix-ops : "
+    '@typescript-eslint/triple-slash-reference': 0,
     //禁止把undefined赋值给一个变量
+
     'no-undef-init': 2,
     //操作符前后需要加空格
     'space-infix-ops': 2,
