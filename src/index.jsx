@@ -43,8 +43,8 @@ class App extends React.Component {
         {/* <Comm /> */}
         {/* <ZButton /> */}
         {/* <z-button color="blur">按钮</z-button> */}
-        <Canvas />
         <Form />
+        <Canvas />
         {/* {sub} */}
         {/* <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} /> */}
       </div>

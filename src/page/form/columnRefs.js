@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { COLUMN_TYPE } from '@common/dictionary';
@@ -18,6 +19,50 @@ function columnRefs() {
       decorator: {
         initialValue: this.state.params.num,
         rules: [{ required: true, message: '请输入国航编码' }],
+      },
+    },
+    {
+      title: '国航编码1',
+      dataIndex: 'num1',
+      type: COLUMN_TYPE.inputType,
+      visible: true,
+      props: {
+        allowClear: true,
+        disabled: false,
+        placeholder: '请输入',
+      },
+      decorator: {
+        initialValue: 1,
+        rules: [{ required: true, message: '请输入国航编码' }],
+      },
+    },
+    {
+      title: '日期',
+      dataIndex: 'date',
+      type: COLUMN_TYPE.timeType,
+      visible: true,
+      props: {
+        allowClear: true,
+        disabled: false,
+        placeholder: '请输入',
+      },
+      decorator: {
+        initialValue: null,
+        rules: [{ required: true, message: '请输日期' }],
+      },
+    },
+    {
+      title: 'btnlist',
+      dataIndex: 'btn',
+      type: COLUMN_TYPE.eleType,
+      visible: true,
+      ele: () => {
+        return (
+          <React.Fragment>
+            <label>fdf</label>
+            <span>fdfdf</span>
+          </React.Fragment>
+        );
       },
     },
     {
