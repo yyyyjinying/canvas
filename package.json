@@ -11,10 +11,9 @@
     "antd-form",
     "yyyyjinying"
   ],
-  "dependencies": {
-    "antd": "^3.26.20"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "antd": "^3.26.20",
     "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.12.1",
     "@types/react": "^16.9.56",

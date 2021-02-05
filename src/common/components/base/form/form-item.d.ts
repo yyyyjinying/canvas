@@ -5,7 +5,7 @@ interface item {
   props: any;
   decorator: any;
   type: string;
-  ele?: (item?: Iitem, getFieldDecorator?: any) => JSX.Element;
+  ele?: (item?: item, getFieldDecorator?: any) => JSX.Element;
   options?: any[];
   keyToName?: { value: string | number; name: string | number };
   visible?: boolean;
@@ -16,9 +16,9 @@ interface item {
   trigger?: any;
   downUpOption?: any;
   onCurTrigger?: any;
-  startChildren?: (item?: Iitem, getFieldDecorator?: any) => JSX.Element;
-  endChildren?: (item?: Iitem, getFieldDecorator?: any) => JSX.Element;
-  children?: (item?: Iitem, getFieldDecorator?: any) => JSX.Element;
+  startChildren?: (item?: item, getFieldDecorator?: any) => JSX.Element;
+  endChildren?: (item?: item, getFieldDecorator?: any) => JSX.Element;
+  children?: (item?: item, getFieldDecorator?: any) => JSX.Element;
 }
 
 declare module 'IForm' {
@@ -36,6 +36,6 @@ declare module 'IFormitem' {
   export interface Iitem extends item {}
   export interface IformItem {
     form: any;
-    columns: Iitem[];
+    columns: item[];
   }
 }
