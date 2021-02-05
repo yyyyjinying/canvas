@@ -9,6 +9,7 @@ import Canvas from './page/canvas';
 // import { Button } from 'yyyyjinying-button-test';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 // import ZButton from 'z-jinying-test';
+import Form from './page/form';
 import './style.less';
 // import "./tapable";
 // import Car from "./car.jpg";
@@ -40,9 +41,10 @@ class App extends React.Component {
       <div>
         {/* iphone */}
         {/* <Comm /> */}
-        {/* <ZButton /> */}
+        <ZButton />
         {/* <z-button color="blur">按钮</z-button> */}
         <Canvas />
+        <Form />
         {/* {sub} */}
         {/* <window.other.default num={this.state.num} emitFn={this.emitFn.bind(this)} /> */}
       </div>
