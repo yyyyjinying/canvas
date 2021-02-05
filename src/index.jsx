@@ -41,7 +41,7 @@ class App extends React.Component {
       <div>
         {/* iphone */}
         {/* <Comm /> */}
-        <ZButton />
+        {/* <ZButton /> */}
         {/* <z-button color="blur">按钮</z-button> */}
         <Canvas />
         <Form />
