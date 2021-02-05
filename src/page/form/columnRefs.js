@@ -1,10 +1,9 @@
 /* eslint-disable react/display-name */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { COLUMN_TYPE } from '@common/dictionary';
 const SPAN = 8;
 
-function columnRefs() {
+function columnRefs(COLUMN_TYPE) {
   const column = [
     {
       title: '国航编码',
