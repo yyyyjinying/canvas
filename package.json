@@ -1,16 +1,17 @@
 {
-  "name": "z-jinying-test",
-  "version": "1.0.5",
-  "description": "z测试",
+  "name": "r-form-antd",
+  "version": "1.0.0",
+  "description": "依赖antd快速创建自定义form表单组件",
   "main": "./dist/webpack-zhao.js",
   "repository": "https://github.com/yyyyjinying/canvas.git",
   "keywords": [
-    "z",
+    "form",
+    "antd",
+    "react-form",
+    "antd-form",
     "yyyyjinying"
   ],
-  "dependencies": {
-    "yyyyjinying-button-test": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.12.1",
