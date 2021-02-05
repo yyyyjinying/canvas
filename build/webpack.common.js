@@ -8,7 +8,11 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const pxtorem = require('postcss-pxtorem');
 
 const postcssPlugins = (loader) => {
-  let arr = [require('postcss-import')({ root: loader.resourcePath }), require('autoprefixer')(), require('cssnano')()];
+  const arr = [
+    require('postcss-import')({ root: loader.resourcePath }),
+    require('autoprefixer')(),
+    require('cssnano')(),
+  ];
   process.env.clientType === 'iPhone' &&
     arr.push(
       pxtorem({
@@ -20,7 +24,8 @@ const postcssPlugins = (loader) => {
 };
 
 const cssLoader = () => {
-  return process.env.NODE_ENV === 'development'
+  // return process.env.NODE_ENV === 'development'
+  return process.env.NODE_ENV
     ? {
         loader: 'style-loader',
       }
@@ -32,7 +37,7 @@ const cssLoader = () => {
       };
 };
 
-let config = {
+const config = {
   entry: {},
   output: {},
   resolve: {
@@ -176,11 +181,11 @@ let config = {
   },
 };
 
-process.env.NODE_ENV === 'production' &&
-  config.plugins.push(
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-    }),
-  );
+// process.env.NODE_ENV === 'production' &&
+//   config.plugins.push(
+//     new MiniCssExtractPlugin({
+//       filename: 'css/[name].css',
+//     }),
+//   );
 
 module.exports = config;

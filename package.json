@@ -11,7 +11,9 @@
     "antd-form",
     "yyyyjinying"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "antd": "^3.26.20"
+  },
   "devDependencies": {
     "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.12.1",
@@ -46,7 +48,6 @@
     "@babel/preset-typescript": "^7.12.1",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
-    "antd": "^3.26.20",
     "autoprefixer": "^9.7.4",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^26.3.0",
