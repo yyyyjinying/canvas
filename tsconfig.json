@@ -12,7 +12,7 @@
     "allowJs": true, // 允许编译javascript文件
     "resolveJsonModule": true, // 模块导入json
     "moduleResolution": "node", // 模块解析查找路径的规则
-    "rootDir": "./dist",
+    "rootDir": ".",
     "outDir": "./dist",
     "noEmit": true, // 不输出(不编译代码，只执行类型检查)
     "sourceMap": true, // 生成相应的.map文件
