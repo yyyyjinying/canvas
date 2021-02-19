@@ -21,7 +21,7 @@ module.exports = merge(
       index: 'home.html',
       // openPage: "home.html",
       open: true,
-      port: 9089,
+      port: 9000,
       compress: true,
       host: '0.0.0.0',
       hot: true,
