@@ -1,11 +1,11 @@
 // React.ReactNode JSX.Element  React.CSSProperties
-interface item {
+interface CItem {
   title: string;
   dataIndex: string;
   props: any;
   decorator: any;
   type: string;
-  ele?: (item?: item, getFieldDecorator?: any) => JSX.Element;
+  ele?: (item?: CItem, getFieldDecorator?: any) => JSX.Element;
   options?: any[];
   keyToName?: { value: string | number; name: string | number };
   visible?: boolean;
@@ -16,26 +16,26 @@ interface item {
   trigger?: any;
   downUpOption?: any;
   onCurTrigger?: any;
-  startChildren?: (item?: item, getFieldDecorator?: any) => JSX.Element;
-  endChildren?: (item?: item, getFieldDecorator?: any) => JSX.Element;
-  children?: (item?: item, getFieldDecorator?: any) => JSX.Element;
+  startChildren?: (item?: CItem, getFieldDecorator?: any) => JSX.Element;
+  endChildren?: (item?: CItem, getFieldDecorator?: any) => JSX.Element;
+  children?: (item?: CItem, getFieldDecorator?: any) => JSX.Element;
+}
+interface Icolumns {
+  form: any;
+  columns: CItem[];
 }
 
 declare module 'IForm' {
-  export interface Iprops {
-    form: any;
+  export interface Iprops extends Icolumns {
+    autoComplete?: string;
     className?: string;
-    columns: item[];
     onValuesChange?: (props?: any, changedValues?: any, allValues?: any) => void;
     mapPropsToFields?: (props?: any) => void;
-    onFieldsChange: (props: any, fields: any, allFields: any) => void;
+    onFieldsChange?: (props: any, fields: any, allFields: any) => void;
   }
 }
 
 declare module 'IFormitem' {
-  export interface Iitem extends item {}
-  export interface IformItem {
-    form: any;
-    columns: item[];
-  }
+  export interface Iitem extends CItem {}
+  export interface IformItem extends Icolumns {}
 }

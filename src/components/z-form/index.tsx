@@ -13,14 +13,16 @@ class ZForm extends React.Component<any, any> {
   }
   onValuesChange() {}
   mapPropsToFields() {}
+
   render() {
+    
     return (
       <Form
         // className="z-form"
         // // mapPropsToFields={this.mapPropsToFields.bind(this)}
         // // onValuesChange={this.onValuesChange.bind(this)}
         columns={columnRefs.call(this)}
-      />
+        />
     );
   }
 }

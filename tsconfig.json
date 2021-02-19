@@ -24,7 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": false,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "noImplicitThis": false, // 当true this表达式的值为 any类型的时候，生成一个错误
     "noImplicitAny": true,
     "importHelpers": true,
     "strictNullChecks": true,

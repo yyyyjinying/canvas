@@ -1,9 +1,9 @@
-// eslint-disable-next-line no-unused-vars
+
 import { COLUMN_TYPE } from '@common/dictionary';
 const SPAN = 8;
 
-function columnRefs() {
-  const column = [
+function columnRefs() {  
+  const columns: CItem[] = [
     {
       title: '国航编码',
       dataIndex: 'num',
@@ -41,7 +41,7 @@ function columnRefs() {
       },
     },
   ];
-  return column.map((item) => {
+  return columns.map((item:CItem) => {
     item.span = item.span || SPAN;
     return item;
   });

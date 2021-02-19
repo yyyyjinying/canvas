@@ -10,9 +10,10 @@ class AForm extends React.Component<IForm.Iprops, any> {
   constructor(props: IForm.Iprops) {
     super(props);
   }
+  
   render() {
     return (
-      <Form className={this.props.className} layout="inline" autoComplete="off">
+      <Form className={this.props.className} layout="inline" autoComplete={this.props.autoComplete || "off"}>
         <FormItem form={this.props.form} columns={this.props.columns} />
       </Form>
     );

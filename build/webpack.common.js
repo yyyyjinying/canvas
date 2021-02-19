@@ -85,7 +85,7 @@ const config = {
         ],
       },
       {
-        test: /\.(js|jsx|tsx)$/,
+        test: /\.(js|ts|jsx|tsx)$/,
         use: [
           {
             loader: 'babel-loader',
