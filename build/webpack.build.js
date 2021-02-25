@@ -10,7 +10,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = merge(
   {
     entry: {
-      home: './src/index.ts',
+      home: './src/index.jsx',
     },
     output: {
       filename: 'webpack-zhao.js',

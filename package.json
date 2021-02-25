@@ -1,6 +1,6 @@
 {
   "name": "r-form-antd",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "依赖antd快速创建自定义form表单组件",
   "main": "./dist/webpack-zhao.js",
   "types": "dist/types/index.d.ts",
