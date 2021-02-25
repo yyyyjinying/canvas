@@ -108,8 +108,8 @@
     "browserlist": "npx browserslist",
     "ts-node": "npx ts-node ./src/page/ts-test/index.ts",
     "test": "jest",
-    "build": "npx cross-env NODE_ENV=production webpack --config ./build/webpack.build.js",
-    "build:iPhone": "npx cross-env NODE_ENV=production clientType=iPhone webpack --config ./build/webpack.build.js",
+    "build": "npx cross-env NODE_ENV=production webpack --config ./build/webpack.build.js && tsc",
+    "build:iPhone": "npx cross-env NODE_ENV=production clientType=iPhone webpack --config ./build/webpack.build.js && tsc",
     "dev": "npx cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js",
     "dev:iPhone": "npx cross-env NODE_ENV=development clientType=iPhone webpack-dev-server --config ./build/webpack.dev.js",
     "build:dll": "npx cross-env NODE_ENV=production webpack --config ./build/webpack.dll.js"
