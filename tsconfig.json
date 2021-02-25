@@ -31,6 +31,7 @@
     // "importHelpers": true,
     // "strictNullChecks": true,
   },
+  // "references": [{ "path": "./src" }],
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "build", "scripts", "webpack", "jest"]
 }

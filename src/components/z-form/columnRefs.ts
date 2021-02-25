@@ -1,5 +1,6 @@
 
 import { COLUMN_TYPE } from '@common/dictionary';
+import {CItem} from "@common/components/base/form/type";
 const SPAN = 8;
 
 function columnRefs() {  

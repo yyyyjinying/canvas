@@ -1,13 +1,10 @@
-/// <reference path="./form-item.d.ts"/>
-import * as IForm from "IForm";
-
 
 import React from 'react';
 import { Form } from 'antd';
 import FormItem from './form-item';
-
-class AForm extends React.Component<IForm.Iprops, any> {
-  constructor(props: IForm.Iprops) {
+import {Iprops} from "./type";
+class AForm extends React.Component<Iprops, any> {
+  constructor(props: Iprops) {
     super(props);
   }
   

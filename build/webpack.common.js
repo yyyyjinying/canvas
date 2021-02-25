@@ -46,7 +46,7 @@ const config = {
       '@common': path.resolve(__dirname, '../src/common'),
     },
     // mainFields: ["main","style"],
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.less', '.css'], // 简化文件路径的引用
+    extensions: ['.d.ts', '.js', '.jsx', '.ts', '.tsx', '.json', '.less', '.css'], // 简化文件路径的引用
     modules: ['node_modules'],
   },
   plugins: [

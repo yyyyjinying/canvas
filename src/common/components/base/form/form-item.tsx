@@ -1,5 +1,6 @@
-/// <reference path="./form-item.d.ts"/>
-import * as IFormitem from "IFormitem";
+// /// <reference path="./item.d.ts"/>
+// import * as IFormitem from "IFormitem";
+import {IformItem, Iitem} from "./type";
 
 import React from 'react';
 import {
@@ -27,9 +28,9 @@ const getInitialValue = (initialValue: any) => {
   return initialValue;
 };
 
-const FromItem = (itemProps: IFormitem.IformItem) => {
+const FromItem = (itemProps: IformItem) => {
   const { getFieldDecorator } = itemProps.form;
-  const domType = (item: IFormitem.Iitem) => {
+  const domType = (item: Iitem) => {
     const { dataIndex, props, decorator } = item;
     if (decorator) decorator.initialValue = getInitialValue(decorator.initialValue);
 
