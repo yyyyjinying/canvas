@@ -20,6 +20,9 @@ module.exports = merge(
       library: 'webpackZhao',
       path: path.resolve(__dirname, '../dist'),
     },
+    performance: {
+      hints: false,
+    },
     externals: {
       lodash: {
         commonjs: 'lodash',
