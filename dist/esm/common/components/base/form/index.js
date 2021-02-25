@@ -15,3 +15,4 @@ export default Form.create({
     onValuesChange: (props, changedValues, allValues) => props.onValuesChange && props.onValuesChange(changedValues, allValues),
     onFieldsChange: (props, fields, allFields) => props.onFieldsChange && props.onFieldsChange(props, fields, allFields)
 })(AForm);
+//# sourceMappingURL=index.js.map

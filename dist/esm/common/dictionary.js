@@ -14,3 +14,4 @@ const COLUMN_TYPE = {
     autoCompleteType: 'autoComplete',
 };
 export { COLUMN_TYPE };
+//# sourceMappingURL=dictionary.js.map

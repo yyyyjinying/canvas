@@ -24,3 +24,4 @@ const AuntoTooltip = (text, record, index, curColumn) => {
     return element;
 };
 export default AuntoTooltip;
+//# sourceMappingURL=index.js.map

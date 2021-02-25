@@ -32,3 +32,4 @@ Index.defaultProps = {
     downUpOption: [{ value: 13, title: 'aa', children: [{ value: 14, title: 'bb' }] }],
 };
 export default Index;
+//# sourceMappingURL=index.js.map

@@ -7,3 +7,4 @@ function NoData(props) {
         React.createElement("span", { className: "no-title" }, props.emptyTitle || '暂无数据')));
 }
 export default NoData;
+//# sourceMappingURL=index.js.map

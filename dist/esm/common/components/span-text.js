@@ -34,3 +34,4 @@ const SpanText = (props) => {
     return dom;
 };
 export default SpanText;
+//# sourceMappingURL=span-text.js.map
