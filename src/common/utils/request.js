@@ -25,7 +25,7 @@ const Request = {
   },
   post: (url, params = {}, headers = null) => axios.post(url, params, headers),
   postLoading: async (url, params = {}, headers = null) => {
-    const promise = await axios.get(url, params, headers);
+    const promise = await axios.post(url, params, headers);
     return promise;
   },
 };

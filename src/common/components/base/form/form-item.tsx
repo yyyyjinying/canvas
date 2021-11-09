@@ -1,8 +1,6 @@
 // /// <reference path="./item.d.ts"/>
-// import * as IFormitem from "IFormitem";
-import {IformItem, Iitem} from "./type";
-
 import React from 'react';
+import {Icolumns, Irowitem, COLUMN_TYPE} from "./type";
 import {
   Row,
   Col,
@@ -17,20 +15,16 @@ import {
   InputNumber,
 } from 'antd';
 import SelectDownUp from '../selectDownUp';
-import { COLUMN_TYPE } from '@common/dictionary';
-
 import './style.less';
-
-
 
 const getInitialValue = (initialValue: any) => {
   if (initialValue === undefined || initialValue === null) return undefined;
   return initialValue;
 };
 
-const FromItem = (itemProps: IformItem) => {
+const FromItem = (itemProps: Icolumns) => {
   const { getFieldDecorator } = itemProps.form;
-  const domType = (item: Iitem) => {
+  const domType = (item: Irowitem) => {
     const { dataIndex, props, decorator } = item;
     if (decorator) decorator.initialValue = getInitialValue(decorator.initialValue);
 
@@ -77,10 +71,18 @@ const FromItem = (itemProps: IformItem) => {
 
   return (
     <Row className="formItem" gutter={24}>
-      {itemProps.columns.map((item, index) => {
+      {itemProps.columns.map((item:any, index:number) => {
+        if(item.visible && item.type === COLUMN_TYPE.hiddenType){
+          const {dataIndex, props, decorator} = item;
+          return (
+            <Form.Item key={index} className="hidden">
+              {getFieldDecorator(dataIndex, decorator)(<Input {...props} />)}
+            </Form.Item>
+          )
+        }
         return (
           item.visible && (
-            <Col span={item.span} key={index}>
+            <Col span={item.span || 8} key={index}>
               {item.type === COLUMN_TYPE.eleType ? (
                 <div className={`ant-form-item item${item.className ? ' ' + item.className : ''}`}>{domType(item)}</div>
               ) : item.type === COLUMN_TYPE.selectDownUpType ? (
